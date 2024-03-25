@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Listado de Bandas</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <h1> listado completo de las bandas </h1>
+    <!--  i) Debes mostrar al menos el nombre e imagen de la banda.-->
+    <ol>
+
+        <% for( let i = 0; i < info.lista.length; i++ ) { %>
+            <li>
+                <p> banda: <%= lista[i].nombre %></p>
+                <p> cover: <%= lista[i].cover %></p>
+                
+            </li>
+        <% } %>
+      
+    </ol>
+
+    <!-- ii)Al hacer click en alguna de las bandas debe redirigir al detalle de la misma. -->
+
+    
+</body>
+</html>

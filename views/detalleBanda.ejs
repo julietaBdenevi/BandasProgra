@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Detalle de Bandas</title>
+</head>
+<body>
+    <!-- Debes mostrar todos los datos de la banda-->
+    <ol>
+
+        <% for( let i = 0; i < info.lista.length; i++ ) { %>
+            <li>
+                <p> banda: <%= lista[i].nombre %></p>
+                <p> integrantes: <%= <%= lista[i].integrantes %> </p>
+                <p> genero: <%= lista[i].genero %></p>
+                <p> mejoresCanciones: <%= lista[i].topCanciones %></p>
+                <p> cover: <%= lista[i].cover %></p>
+                <p> video: <%= lista[i].video %></p>
+            </li>
+        <% } %>
+      
+    </ol>
+
+    <!-- ii) Al hacer click en el género de una banda debe redirigir al listado de bandas que pertenezcan a ese género.-->
+
+    <!-- iii) Validar que si el id de la banda que está en la URL no existe se muestre un mensaje ilustrativo -->
+    <% if (noResp){ <%=
+    noResp %> } %>
+
+   
+    
+</body>
+
+
+
